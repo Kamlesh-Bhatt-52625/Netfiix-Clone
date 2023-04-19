@@ -1,0 +1,225 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background: rgb(0, 8, 29);
+
+}
+
+.container {
+  height: 80vh;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+  box-shadow: inset -400px 0px  400px rgba(193, 17, 26, 0.527);
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/61e79073-50cf-4f7b-9a23-73290e6f7dca/d0322828-6d63-4f5f-92fb-30f492e7cca4/IN-en-20230410-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.bg-cover{
+  position: absolute;
+  background: rgb(0, 8, 29);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+.nav button {
+  padding: 4px 8px;
+  font-size: medium;
+  font-weight: 600;
+  z-index: 10;
+  border: none;
+  background-color: rgb(299, 9, 20);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.nav svg {
+  height: 2rem;
+  width: fit-content;
+  z-index: 10;
+  color: rgba(299, 9, 20, 1);
+  fill: currentColor;
+}
+
+.header-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+ 
+}
+
+.header-body div {
+  height: 10vh;
+  z-index: 10;
+  text-align: center;
+}
+
+.discription {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-input {
+  padding: 15px;
+  border-radius: 4px;
+  width: 40%;
+  border: 1px solid white;
+  color: #fff;
+  background-color: #0f0f0f;
+  opacity: 0.7;
+}
+
+.header-input::placeholder {
+  font-family: sans-serif;
+  font-weight: 500;
+  width: 100%;
+  color: #fff;
+}
+
+.header-btn {
+  padding: 9px 8px;
+  border-radius: 4px;
+  font-size: x-large;
+  font-family: sans-serif;
+  margin-left: 9px;
+  font-weight: 600;
+  background-color: rgba(299, 9, 20, 1);
+  color: #fff;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color: rgb(193, 17, 25);
+  transition: 0.25s;
+}
+
+.faq-cont {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-cont h1{
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.faq-box{
+padding: 0px;
+}
+
+.faq-box input[type=checkbox] {
+  display: none;
+}
+
+
+.faq-box li {
+  color: white;
+  list-style: none;
+  font-family: sans-serif;
+  list-style: none;
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(19, 33, 68); 
+}
+
+.faq-box li label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: larger;
+  padding: 25px;
+  transition: .23s ease-in;
+  cursor: pointer;
+}
+
+.faq-box li label:hover {
+  background-color: rgba(34, 51, 98, 1);
+}
+
+.faq-box li label::after{
+  content: "+";
+  font-size: 1.4rem;
+}
+
+.faq-box .content{
+  text-align: justify;
+  border-top: 1px solid rgb(0, 8, 29);
+  font-size: large;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.faq-box input[type="checkbox"]:checked + label + .content {
+   max-height: min-content;
+   transition: .20s ease-in-out;
+   padding: 20px;
+}
+
+
+.faq-box li input[type="checkbox"]:checked + label::after {
+  content: "×";
+  font-size: 1.5rem;
+}
+
+
+.footer-email {
+  width: 80%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container2 {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.footer{
+ color: rgb(193, 17, 25);
+ font-family: monospace;
+ font-size: x-small;
+ padding: 50px;
+ text-align: center;
+}
+
+.footer span{
+  color: rgb(147, 47, 170);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
